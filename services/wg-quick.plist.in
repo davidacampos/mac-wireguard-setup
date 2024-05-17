@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-  <dict>
-    <key>Label</key>
-    <string>wg-quick.{NAME}</string>
-    <key>ProgramArguments</key>
-    <array>
-      <string>/usr/local/sbin/wg-quick-service</string>
-      <string>{NAME}</string>
-    </array>
-  </dict>
+<dict>
+	<key>Disabled</key>
+	<false/>
+	<key>KeepAlive</key>
+	<dict>
+		<key>Crashed</key>
+		<true/>
+		<key>SuccessfulExit</key>
+		<true/>
+	</dict>
+	<key>Label</key>
+  <string>wg-quick.{NAME}</string>
+	<key>ProgramArguments</key>
+	<array>
+    <string>/usr/local/sbin/wg-quick-service</string>
+    <string>{NAME}</string>
+  </array>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>StandardErrorPath</key>
+	<string>/tmp/wg-quick.{NAME}.error.txt</string>
+	<key>StandardOutPath</key>
+	<string>/tmp/wg-quick.{NAME}.out.txt</string>
+</dict>
 </plist>
