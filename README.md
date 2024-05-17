@@ -4,6 +4,8 @@ Makefile for installing wireguard tunnels as launchd services on macOS. It
 just wraps wg-quick script as a service and installs files to appropriate
 locations. Since it uses wg-quick, multiple tunnels may be activated at a time.
 
+> **Note**
+> The difference with this fork is that it's intended to work on newer M1, M2, etc. based Macs
 
 ## Prerequisites
 
