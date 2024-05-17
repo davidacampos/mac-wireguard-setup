@@ -40,4 +40,6 @@ Uninstall services from the system:
 
 ```
 sudo make clean
+sudo launchctl list | grep wg-quick
+sudo launchctl bootout system/wg-quick.XYZ
 ```
